@@ -1,0 +1,59 @@
+package Learning.FirstLearnign.NestedClasses;
+
+public class OuterClass {
+
+    int a;
+
+    String outerField = "Outer field";
+    static String staticOuterField = "Static outer field";
+
+
+    class InnerClass {
+
+        int a;
+        void accessMembers() {
+            System.out.println(outerField);
+            System.out.println(staticOuterField);
+        }
+    }
+
+    static class InnerClassNew {
+        int a;
+    }
+
+    private static class StaticNestedClass {
+        void accessMembers(OuterClass outer) {
+            System.out.println(outer.staticOuterField);
+            System.out.println(outer.outerField);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Inner Class:");
+        System.out.println("--------");
+        OuterClass outerObject = new OuterClass();
+        OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+        innerObject.accessMembers();
+
+        System.out.println("\nStatic nested class:");
+        System.out.println("----------");
+        StaticNestedClass staticNestedObject = new StaticNestedClass();
+        staticNestedObject.accessMembers(outerObject);
+
+        System.out.println("\nTop level class");
+        System.out.println("-------");
+        TopLevelClass topLevelObject = new TopLevelClass();
+        topLevelObject.accessMembers(outerObject);
+
+
+        OuterClass number = new OuterClass();
+        int b = outerObject.a;
+        int c;
+        int j;
+
+        OuterClass.InnerClass h = outerObject.new InnerClass();
+        c = h.a;
+
+
+    }
+}
