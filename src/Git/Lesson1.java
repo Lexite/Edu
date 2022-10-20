@@ -7,4 +7,6 @@ public class Lesson1 {
     private static void print(){
         System.out.println("1st lesson");
     }
+
+
 }
