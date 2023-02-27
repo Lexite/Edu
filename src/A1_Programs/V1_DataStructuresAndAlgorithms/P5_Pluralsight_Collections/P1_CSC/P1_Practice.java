@@ -21,6 +21,7 @@ public class P1_Practice {
         int mul1 = mult.calculate(5,3);
 
         System.out.printf("%d %d %d %d", sum1, sub1, div1, mul1);
+        System.out.println();
 
 
     }
