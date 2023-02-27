@@ -1,8 +1,5 @@
 package B3_BroCode.DataStructures;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class Practice {
     public static final int LENGTH = 20;
 

@@ -9,7 +9,12 @@ public class AnotherForm {
             }
         };
         int z = operation.calculate(20,10);
+
+        Operationable1 minus = (x,y) -> (x+y);
+
+        int m = minus.calculate(20,10);
         System.out.println(z);
+        System.out.println(m);
     }
 }
 

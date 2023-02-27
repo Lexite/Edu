@@ -1,7 +1,7 @@
 package B4_Metanit.P8_LambdaExpressions.P4_Else;
 import java.util.Arrays;
 import java.util.Random;
-import java.util.stream.IntStream;
+
 interface BooleanLogic{
     boolean booleanLogic(int n);
 }
